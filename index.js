@@ -22,10 +22,10 @@ function currentLine(katzDeliLine) {
 var newArray = [];
 
 for (let i = 0; i < katzDeliLine.length; i++){
-  newArray.push(" " + (i + 1) + ". " + katzDeliLine[i]);
+  newArray.push("This line is currently: " + (i + 1) + ". " + katzDeliLine[i]);
 }
 if (katzDeliLine.length === 0) {
   return "The line is currently empty.";
 }
-return "The line is currently: " + newArray;
+return newArray;
 }
