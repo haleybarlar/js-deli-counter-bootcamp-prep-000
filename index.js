@@ -19,7 +19,7 @@ return "Currently serving " + katzDeliLine.shift() + ".";
 }
 
 function currentLine(katzDeliLine) {
-  var number = [];
+  var times = 0;
   
 if (katzDeliLine.length === 0) {
   return "The line is currently empty.";
