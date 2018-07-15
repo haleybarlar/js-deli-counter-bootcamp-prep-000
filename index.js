@@ -21,7 +21,7 @@ return "Currently serving " + katzDeliLine.shift() + ".";
 function currentLine(katzDeliLine) {
 var newArray = [];
 
-for (let i = 1; i < katzDeliLine.length; i++){
+for (let i = 0; i < katzDeliLine.length; i++){
   newArray.push(" " + (i + 1) + ". " + katzDeliLine[i]);
 }
 if (katzDeliLine.length === 0) {
