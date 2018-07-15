@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
   var times = 1;
   
   while (times < katzDeliLine.length) {
-    return "The line is currently: " + times + katzDeliLine[times];
+    return "The line is currently: " + times + "." + katzDeliLine[times];
   }
 if (katzDeliLine.length === 0) {
   return "The line is currently empty.";
