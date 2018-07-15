@@ -19,12 +19,13 @@ return "Currently serving " + katzDeliLine.shift() + ".";
 }
 
 function currentLine(katzDeliLine) {
-  var times = 1;
-  
-  while (times < katzDeliLine.length) {
-    return "The line is currently: " + times + ". " + katzDeliLine[times];
-  }
+var newArray = [];
+
+for (let i = 1; i < katzDeliLine.length; i++){
+  newArray.push((i + 1) + katzDeliLine[i]);
+}
 if (katzDeliLine.length === 0) {
   return "The line is currently empty.";
 }
+return "This line is currently: " + newArray;
 }
